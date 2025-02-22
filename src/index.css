@@ -1,0 +1,30 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+.light {
+  --background-color: #ffffff;
+  --text-color: #000000;
+}
+
+.dark {
+  --background-color: #1e1e1e;
+  --text-color: #ffffff;
+}
+
+body.light,
+.light {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+body.dark,
+.dark {
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
